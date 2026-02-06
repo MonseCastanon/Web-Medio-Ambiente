@@ -475,10 +475,10 @@ El sitio está diseñado para ser fácil de mantener, escalable y efectivo en su
 ## 👥 Créditos y Referencias
 
 **Desarrollado con:**
-- Flask 3.x
+- Flask 3.1.2
 - Bootstrap 5.3.2
 - Bootstrap Icons 1.11.1
-- Python 3.x
+- Python 3.13.12
 
 **Fuentes de información:**
 - Datos ambientales de ONU y OMS
