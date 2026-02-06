@@ -1,18 +1,223 @@
-{% extends "base.html" %} {% block content %}
-<div class="row align-items-center">
-  <div class="col-md-6">
-    <img
-      src="{{ url_for('static', filename='images/sistema.jpg') }}"
-      class="img-fluid rounded"
-    />
+{% extends "base.html" %}
+{% block title %}Sistema de Gestión Ambiental{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="content-card fade-in-up">
+  <div class="row align-items-center">
+    <div class="col-lg-6 order-2 order-lg-1">
+      <img
+        src="{{ url_for('static', filename='images/sistema.jpg') }}"
+        class="img-fluid img-eco"
+        alt="Sistema de Gestión Ambiental"
+      />
+    </div>
+    <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+      <div class="icon-badge">
+        <i class="bi bi-gear-fill"></i>
+      </div>
+      <h1 class="hero-title">Sistema de Gestión Ambiental (SGA)</h1>
+      <p class="lead-text">
+        Un Sistema de Gestión Ambiental es un marco estructurado que permite a 
+        organizaciones identificar, gestionar, monitorear y reducir su impacto 
+        ambiental de manera sistemática y continua.
+      </p>
+      <div class="mt-3">
+        <span class="eco-badge"><i class="bi bi-shield-check"></i> ISO 14001</span>
+        <span class="eco-badge"><i class="bi bi-graph-down"></i> Reduce impacto</span>
+        <span class="eco-badge"><i class="bi bi-award"></i> Certificación</span>
+      </div>
+    </div>
   </div>
-  <div class="col-md-6">
-    <h2>Sistema de Gestión Ambiental</h2>
-    <p>
-      Un Sistema de Gestión Ambiental (SGA) es un conjunto de políticas,
-      procedimientos y prácticas que permiten a organizaciones reducir su
-      impacto ambiental y cumplir con normativas ecológicas.
-    </p>
+</div>
+
+<!-- Componentes del SGA -->
+<div class="content-card">
+  <h2 class="hero-subtitle text-center mb-4">
+    <i class="bi bi-puzzle-fill"></i> Componentes Clave de un SGA
+  </h2>
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <div class="p-4 h-100" style="background: linear-gradient(135deg, rgba(124, 179, 66, 0.1) 0%, rgba(38, 166, 154, 0.1) 100%); border-radius: 12px; border-left: 4px solid var(--verde-claro);">
+        <h4 class="text-success">
+          <i class="bi bi-bullseye"></i> 1. Política Ambiental
+        </h4>
+        <p class="lead-text mb-0">
+          Declaración de intenciones y principios que guían las acciones ambientales 
+          de la organización, estableciendo compromisos de mejora continua y cumplimiento legal.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="p-4 h-100" style="background: linear-gradient(135deg, rgba(124, 179, 66, 0.1) 0%, rgba(38, 166, 154, 0.1) 100%); border-radius: 12px; border-left: 4px solid var(--verde-agua);">
+        <h4 class="text-success">
+          <i class="bi bi-search"></i> 2. Planificación
+        </h4>
+        <p class="lead-text mb-0">
+          Identificación de aspectos ambientales significativos, evaluación de riesgos, 
+          establecimiento de objetivos medibles y desarrollo de planes de acción concretos.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="p-4 h-100" style="background: linear-gradient(135deg, rgba(124, 179, 66, 0.1) 0%, rgba(38, 166, 154, 0.1) 100%); border-radius: 12px; border-left: 4px solid var(--verde-medio);">
+        <h4 class="text-success">
+          <i class="bi bi-play-circle"></i> 3. Implementación
+        </h4>
+        <p class="lead-text mb-0">
+          Asignación de recursos, definición de roles y responsabilidades, 
+          capacitación del personal y establecimiento de procedimientos operativos.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="p-4 h-100" style="background: linear-gradient(135deg, rgba(124, 179, 66, 0.1) 0%, rgba(38, 166, 154, 0.1) 100%); border-radius: 12px; border-left: 4px solid var(--cielo);">
+        <h4 class="text-success">
+          <i class="bi bi-clipboard-data"></i> 4. Verificación
+        </h4>
+        <p class="lead-text mb-0">
+          Monitoreo y medición del desempeño ambiental, auditorías internas, 
+          evaluación del cumplimiento legal y revisión de indicadores.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="p-4 h-100" style="background: linear-gradient(135deg, rgba(124, 179, 66, 0.1) 0%, rgba(38, 166, 154, 0.1) 100%); border-radius: 12px; border-left: 4px solid var(--tierra);">
+        <h4 class="text-success">
+          <i class="bi bi-arrow-repeat"></i> 5. Mejora Continua
+        </h4>
+        <p class="lead-text mb-0">
+          Revisión periódica del sistema, identificación de oportunidades de mejora, 
+          actualización de objetivos y adaptación a nuevos requisitos.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="p-4 h-100" style="background: linear-gradient(135deg, rgba(124, 179, 66, 0.1) 0%, rgba(38, 166, 154, 0.1) 100%); border-radius: 12px; border-left: 4px solid var(--verde-oscuro);">
+        <h4 class="text-success">
+          <i class="bi bi-chat-dots"></i> 6. Comunicación
+        </h4>
+        <p class="lead-text mb-0">
+          Transparencia con partes interesadas, reportes de sostenibilidad, 
+          canales de comunicación interna y externa sobre desempeño ambiental.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Beneficios del SGA -->
+<div class="content-card">
+  <h2 class="hero-subtitle text-center mb-4">
+    <i class="bi bi-star-fill"></i> Beneficios de Implementar un SGA
+  </h2>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="text-center p-3">
+        <div class="icon-badge mx-auto">
+          <i class="bi bi-cash-stack"></i>
+        </div>
+        <h5 class="text-success mt-3">Reducción de Costos</h5>
+        <p class="lead-text">
+          Optimización en el uso de recursos (agua, energía, materias primas), 
+          disminución de residuos y mayor eficiencia operativa.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="text-center p-3">
+        <div class="icon-badge mx-auto">
+          <i class="bi bi-file-text"></i>
+        </div>
+        <h5 class="text-success mt-3">Cumplimiento Legal</h5>
+        <p class="lead-text">
+          Garantiza el cumplimiento de normativas ambientales locales e internacionales, 
+          evitando multas y sanciones.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="text-center p-3">
+        <div class="icon-badge mx-auto">
+          <i class="bi bi-trophy"></i>
+        </div>
+        <h5 class="text-success mt-3">Imagen Corporativa</h5>
+        <p class="lead-text">
+          Mejora la reputación de la empresa ante clientes, inversionistas y 
+          la comunidad como organización responsable.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="text-center p-3">
+        <div class="icon-badge mx-auto">
+          <i class="bi bi-shield-fill-check"></i>
+        </div>
+        <h5 class="text-success mt-3">Gestión de Riesgos</h5>
+        <p class="lead-text">
+          Identificación temprana de riesgos ambientales y prevención de 
+          incidentes que puedan afectar operaciones.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="text-center p-3">
+        <div class="icon-badge mx-auto">
+          <i class="bi bi-people-fill"></i>
+        </div>
+        <h5 class="text-success mt-3">Compromiso del Personal</h5>
+        <p class="lead-text">
+          Fomenta la cultura ambiental, aumenta la motivación y el orgullo 
+          de pertenencia de los colaboradores.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="text-center p-3">
+        <div class="icon-badge mx-auto">
+          <i class="bi bi-graph-up"></i>
+        </div>
+        <h5 class="text-success mt-3">Competitividad</h5>
+        <p class="lead-text">
+          Acceso a nuevos mercados, ventajas competitivas y preferencia de 
+          consumidores conscientes del medio ambiente.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Norma ISO 14001 -->
+<div class="content-card">
+  <div class="row align-items-center">
+    <div class="col-md-8">
+      <h2 class="hero-subtitle">
+        <i class="bi bi-patch-check-fill"></i> Norma ISO 14001
+      </h2>
+      <p class="lead-text">
+        La ISO 14001 es la norma internacional más reconocida para sistemas de gestión 
+        ambiental. Proporciona un marco que las organizaciones pueden seguir para 
+        configurar un sistema eficaz.
+      </p>
+      <p class="lead-text">
+        <strong>Principios clave:</strong>
+      </p>
+      <ul class="lead-text">
+        <li>Protección del medio ambiente</li>
+        <li>Prevención de la contaminación</li>
+        <li>Cumplimiento de requisitos legales</li>
+        <li>Mejora del desempeño ambiental</li>
+        <li>Enfoque basado en el ciclo PDCA (Planificar-Hacer-Verificar-Actuar)</li>
+      </ul>
+    </div>
+    <div class="col-md-4 text-center">
+      <div style="background: linear-gradient(135deg, var(--verde-claro) 0%, var(--verde-agua) 100%); border-radius: 50%; width: 200px; height: 200px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 8px 24px rgba(0,0,0,0.15);">
+        <div class="text-white">
+          <i class="bi bi-award" style="font-size: 4rem;"></i>
+          <div style="font-size: 1.2rem; font-weight: 700; margin-top: 0.5rem;">ISO 14001</div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 {% endblock %}

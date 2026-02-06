@@ -1,18 +1,199 @@
-{% extends "base.html" %} {% block content %}
-<div class="row align-items-center">
-  <div class="col-md-6">
-    <h2>El planeta que dejaremos a nuestros hijos</h2>
-    <p>
-      Las decisiones que tomamos hoy impactarán directamente la calidad de vida
-      de las próximas generaciones.
-    </p>
+{% extends "base.html" %}
+{% block title %}El Futuro de Nuestro Planeta{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="content-card fade-in-up">
+  <div class="row align-items-center">
+    <div class="col-lg-6 mb-4 mb-lg-0">
+      <div class="icon-badge">
+        <i class="bi bi-globe-americas"></i>
+      </div>
+      <h1 class="hero-title">El Planeta que Dejaremos a Nuestros Hijos</h1>
+      <p class="lead-text">
+        Las decisiones que tomamos hoy determinarán la calidad de vida de las 
+        próximas generaciones. Cada acción cuenta: desde reducir nuestro consumo 
+        de plástico hasta promover energías renovables. El futuro de nuestro 
+        planeta está en nuestras manos.
+      </p>
+      <div class="alert alert-warning mt-3 border-0" style="background: rgba(255, 193, 7, 0.1); border-left: 4px solid #ffc107 !important;">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+        <strong> Punto crítico:</strong> Tenemos hasta 2030 para reducir drásticamente 
+        las emisiones y evitar consecuencias irreversibles del cambio climático.
+      </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-lg-6">
       <img
         src="{{ url_for('static', filename='images/futuro.jpg') }}"
-        class="img-fluid rounded mb-3"
+        class="img-fluid img-eco"
+        alt="Futuro del planeta"
       />
     </div>
   </div>
-  {% endblock %}
 </div>
+
+<!-- Escenarios Futuros -->
+<div class="content-card">
+  <h2 class="hero-subtitle text-center mb-4">
+    <i class="bi bi-diagram-3-fill"></i> Dos Caminos Posibles
+  </h2>
+  <div class="row">
+    <div class="col-lg-6 mb-4">
+      <div class="p-4 h-100" style="background: linear-gradient(135deg, rgba(220, 53, 69, 0.1) 0%, rgba(255, 87, 34, 0.1) 100%); border-radius: 16px; border: 2px solid rgba(220, 53, 69, 0.3);">
+        <h3 class="text-danger">
+          <i class="bi bi-thermometer-high"></i> Escenario de Inacción
+        </h3>
+        <p class="lead-text"><strong>Si no actuamos ahora...</strong></p>
+        <ul class="lead-text">
+          <li><strong>Aumento de 3-4°C</strong> en temperatura global para 2100</li>
+          <li><strong>Nivel del mar:</strong> Aumento de 1-2 metros, inundando ciudades costeras</li>
+          <li><strong>Eventos extremos:</strong> Huracanes, sequías e incendios más frecuentes y severos</li>
+          <li><strong>Ecosistemas:</strong> Colapso de arrecifes de coral y extinción masiva de especies</li>
+          <li><strong>Agricultura:</strong> Pérdida del 30% de cultivos por sequías y plagas</li>
+          <li><strong>Migraciones:</strong> Más de 200 millones de refugiados climáticos</li>
+          <li><strong>Economía:</strong> Pérdidas económicas de billones de dólares</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-4">
+      <div class="p-4 h-100" style="background: linear-gradient(135deg, rgba(76, 175, 80, 0.1) 0%, rgba(38, 166, 154, 0.1) 100%); border-radius: 16px; border: 2px solid rgba(76, 175, 80, 0.3);">
+        <h3 class="text-success">
+          <i class="bi bi-check-circle-fill"></i> Escenario Sostenible
+        </h3>
+        <p class="lead-text"><strong>Si actuamos de inmediato...</strong></p>
+        <ul class="lead-text">
+          <li><strong>Límite de 1.5°C</strong> en aumento de temperatura</li>
+          <li><strong>Energía limpia:</strong> 100% renovable para 2050</li>
+          <li><strong>Ciudades verdes:</strong> Espacios urbanos con aire limpio y naturaleza integrada</li>
+          <li><strong>Biodiversidad:</strong> Recuperación de ecosistemas y especies protegidas</li>
+          <li><strong>Economía circular:</strong> Cero residuos, productos reutilizables y reciclables</li>
+          <li><strong>Alimentación:</strong> Sistemas agrícolas sostenibles y resilientes</li>
+          <li><strong>Bienestar:</strong> Mejor calidad de vida y salud para todos</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Desafíos y Soluciones -->
+<div class="content-card">
+  <h2 class="hero-subtitle text-center mb-4">
+    <i class="bi bi-gear-wide-connected"></i> Desafíos Globales y Soluciones
+  </h2>
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <div class="p-3" style="background: #f8f9fa; border-radius: 12px; border-left: 4px solid #dc3545;">
+        <h5 class="text-danger"><i class="bi bi-cloud-haze2-fill"></i> Cambio Climático</h5>
+        <p class="lead-text mb-2"><strong>Desafío:</strong> Emisiones de CO₂ y metano que calientan el planeta</p>
+        <p class="lead-text mb-0"><strong>Solución:</strong> Transición a energías renovables (solar, eólica, hidroeléctrica), 
+        reforestación masiva y reducción del uso de combustibles fósiles</p>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="p-3" style="background: #f8f9fa; border-radius: 12px; border-left: 4px solid #ff9800;">
+        <h5 style="color: #ff9800;"><i class="bi bi-droplet-half"></i> Escasez de Agua</h5>
+        <p class="lead-text mb-2"><strong>Desafío:</strong> 2 mil millones de personas sin acceso a agua potable</p>
+        <p class="lead-text mb-0"><strong>Solución:</strong> Tecnologías de desalinización, captación de lluvia, 
+        riego eficiente y protección de cuencas hídricas</p>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="p-3" style="background: #f8f9fa; border-radius: 12px; border-left: 4px solid #3f51b5;">
+        <h5 class="text-primary"><i class="bi bi-trash-fill"></i> Contaminación por Plásticos</h5>
+        <p class="lead-text mb-2"><strong>Desafío:</strong> 300 millones de toneladas de plástico producidas anualmente</p>
+        <p class="lead-text mb-0"><strong>Solución:</strong> Prohibición de plásticos de un solo uso, desarrollo de 
+        bioplásticos y economía circular del plástico</p>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="p-3" style="background: #f8f9fa; border-radius: 12px; border-left: 4px solid #4caf50;">
+        <h5 class="text-success"><i class="bi bi-tree"></i> Deforestación</h5>
+        <p class="lead-text mb-2"><strong>Desafío:</strong> Pérdida de 10 millones de hectáreas de bosque cada año</p>
+        <p class="lead-text mb-0"><strong>Solución:</strong> Programas de reforestación, agricultura sostenible, 
+        protección de áreas naturales y consumo responsable</p>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="p-3" style="background: #f8f9fa; border-radius: 12px; border-left: 4px solid #9c27b0;">
+        <h5 style="color: #9c27b0;"><i class="bi bi-bug-fill"></i> Pérdida de Biodiversidad</h5>
+        <p class="lead-text mb-2"><strong>Desafío:</strong> 1 millón de especies en peligro de extinción</p>
+        <p class="lead-text mb-0"><strong>Solución:</strong> Creación de reservas naturales, corredores biológicos 
+        y programas de conservación de especies</p>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="p-3" style="background: #f8f9fa; border-radius: 12px; border-left: 4px solid #00bcd4;">
+        <h5 style="color: #00bcd4;"><i class="bi bi-lightning-charge-fill"></i> Energía No Renovable</h5>
+        <p class="lead-text mb-2"><strong>Desafío:</strong> Dependencia del 80% de combustibles fósiles</p>
+        <p class="lead-text mb-0"><strong>Solución:</strong> Inversión masiva en energía solar, eólica, 
+        almacenamiento en baterías y redes inteligentes</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Lo que puedes hacer -->
+<div class="content-card">
+  <h2 class="hero-subtitle text-center mb-4">
+    <i class="bi bi-hand-thumbs-up-fill"></i> Tu Rol en el Futuro del Planeta
+  </h2>
+  <p class="lead-text text-center mb-4">
+    El cambio comienza con cada uno de nosotros. Aquí hay acciones concretas que puedes 
+    implementar para ser parte de la solución:
+  </p>
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <div class="text-center p-4" style="background: linear-gradient(135deg, rgba(124, 179, 66, 0.15) 0%, rgba(38, 166, 154, 0.15) 100%); border-radius: 12px; height: 100%;">
+        <i class="bi bi-house-heart text-success" style="font-size: 3rem;"></i>
+        <h5 class="mt-3 text-success">En Casa</h5>
+        <ul class="text-start lead-text">
+          <li>Instala paneles solares</li>
+          <li>Compostaje de residuos orgánicos</li>
+          <li>Electrodomésticos eficientes</li>
+          <li>Jardín con plantas nativas</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="text-center p-4" style="background: linear-gradient(135deg, rgba(124, 179, 66, 0.15) 0%, rgba(38, 166, 154, 0.15) 100%); border-radius: 12px; height: 100%;">
+        <i class="bi bi-cart text-success" style="font-size: 3rem;"></i>
+        <h5 class="mt-3 text-success">Al Consumir</h5>
+        <ul class="text-start lead-text">
+          <li>Compra productos ecológicos</li>
+          <li>Evita empaques excesivos</li>
+          <li>Prefiere marcas sostenibles</li>
+          <li>Reduce consumo de carne</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="text-center p-4" style="background: linear-gradient(135deg, rgba(124, 179, 66, 0.15) 0%, rgba(38, 166, 154, 0.15) 100%); border-radius: 12px; height: 100%;">
+        <i class="bi bi-megaphone text-success" style="font-size: 3rem;"></i>
+        <h5 class="mt-3 text-success">En la Comunidad</h5>
+        <ul class="text-start lead-text">
+          <li>Participa en limpiezas</li>
+          <li>Vota por políticas verdes</li>
+          <li>Educa a otros</li>
+          <li>Apoya ONGs ambientales</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Mensaje de esperanza -->
+<div class="content-card text-center" style="background: linear-gradient(135deg, var(--verde-claro) 0%, var(--verde-agua) 100%); color: white;">
+  <i class="bi bi-hearts" style="font-size: 4rem; opacity: 0.9;"></i>
+  <h2 class="mt-3 mb-3" style="font-weight: 700;">Aún Hay Esperanza</h2>
+  <p class="lead" style="font-size: 1.2rem; max-width: 800px; margin: 0 auto;">
+    Cada día surgen nuevas tecnologías limpias, más personas se comprometen con el cambio 
+    y gobiernos implementan políticas sostenibles. El futuro no está escrito en piedra. 
+    <strong>Juntos podemos crear un mundo mejor para las próximas generaciones.</strong>
+  </p>
+  <div class="mt-4">
+    <a href="/tres-r" class="btn btn-light btn-lg px-5" style="border-radius: 50px; font-weight: 600;">
+      <i class="bi bi-recycle"></i> Descubre Cómo Ayudar
+    </a>
+  </div>
+</div>
+{% endblock %}

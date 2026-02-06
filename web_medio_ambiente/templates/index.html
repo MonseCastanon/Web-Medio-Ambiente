@@ -1,17 +1,183 @@
-{% extends "base.html" %} {% block content %}
-<div class="row align-items-center">
-  <div class="col-md-6">
-    <h1>¿Por qué es importante cuidar el medio ambiente?</h1>
-    <p class="lead">
-      El medio ambiente es la base de la vida. Protegerlo garantiza bienestar,
-      salud y recursos para las futuras generaciones.
-    </p>
+{% extends "base.html" %}
+{% block title %}Inicio - Cuidado del Medio Ambiente{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="content-card fade-in-up">
+  <div class="row align-items-center">
+    <div class="col-lg-6 mb-4 mb-lg-0">
+      <div class="icon-badge">
+        <i class="bi bi-tree-fill"></i>
+      </div>
+      <h1 class="hero-title">¿Por qué es importante cuidar el medio ambiente?</h1>
+      <p class="lead-text">
+        El medio ambiente es el fundamento de toda la vida en nuestro planeta. 
+        Protegerlo no es solo una responsabilidad, es una necesidad urgente que 
+        garantiza el bienestar, la salud y los recursos naturales para las 
+        generaciones presentes y futuras.
+      </p>
+      <div class="mt-4">
+        <span class="eco-badge"><i class="bi bi-water"></i> Agua limpia</span>
+        <span class="eco-badge"><i class="bi bi-wind"></i> Aire puro</span>
+        <span class="eco-badge"><i class="bi bi-flower1"></i> Biodiversidad</span>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <img
+        src="{{ url_for('static', filename='images/ambiente.jpg') }}"
+        class="img-fluid img-eco"
+        alt="Medio ambiente saludable"
+      />
+    </div>
   </div>
-  <div class="col-md-6">
-    <img
-      src="{{ url_for('static', filename='images/ambiente.jpg') }}"
-      class="img-fluid rounded"
-    />
+</div>
+
+<!-- Estadísticas de Impacto -->
+<div class="row mb-4">
+  <div class="col-12 mb-3">
+    <h2 class="hero-subtitle text-center">
+      <i class="bi bi-graph-up-arrow"></i> Impacto Ambiental en Cifras
+    </h2>
+  </div>
+  <div class="col-md-3 mb-3">
+    <div class="stat-card">
+      <div class="stat-number">8M</div>
+      <div class="stat-label">Toneladas de plástico en océanos anualmente</div>
+    </div>
+  </div>
+  <div class="col-md-3 mb-3">
+    <div class="stat-card">
+      <div class="stat-number">1.1°C</div>
+      <div class="stat-label">Aumento temperatura global desde 1880</div>
+    </div>
+  </div>
+  <div class="col-md-3 mb-3">
+    <div class="stat-card">
+      <div class="stat-number">17%</div>
+      <div class="stat-label">De la selva amazónica perdida</div>
+    </div>
+  </div>
+  <div class="col-md-3 mb-3">
+    <div class="stat-card">
+      <div class="stat-number">1M</div>
+      <div class="stat-label">Especies en peligro de extinción</div>
+    </div>
+  </div>
+</div>
+
+<!-- Beneficios del Cuidado Ambiental -->
+<div class="content-card">
+  <h2 class="hero-subtitle text-center mb-4">
+    <i class="bi bi-check-circle-fill"></i> Beneficios de Cuidar Nuestro Planeta
+  </h2>
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <div class="d-flex">
+        <div class="icon-badge me-3" style="width: 50px; height: 50px; font-size: 1.4rem;">
+          <i class="bi bi-heart-pulse"></i>
+        </div>
+        <div>
+          <h4 class="text-success">Salud Mejorada</h4>
+          <p class="lead-text mb-0">
+            Un ambiente limpio reduce enfermedades respiratorias, alergias y 
+            problemas de salud relacionados con la contaminación.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="d-flex">
+        <div class="icon-badge me-3" style="width: 50px; height: 50px; font-size: 1.4rem;">
+          <i class="bi bi-currency-dollar"></i>
+        </div>
+        <div>
+          <h4 class="text-success">Economía Sostenible</h4>
+          <p class="lead-text mb-0">
+            Los recursos naturales bien gestionados generan empleos verdes y 
+            oportunidades económicas a largo plazo.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="d-flex">
+        <div class="icon-badge me-3" style="width: 50px; height: 50px; font-size: 1.4rem;">
+          <i class="bi bi-droplet-fill"></i>
+        </div>
+        <div>
+          <h4 class="text-success">Recursos Preservados</h4>
+          <p class="lead-text mb-0">
+            Conservar el agua, los bosques y la tierra garantiza su 
+            disponibilidad para las futuras generaciones.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="d-flex">
+        <div class="icon-badge me-3" style="width: 50px; height: 50px; font-size: 1.4rem;">
+          <i class="bi bi-cloud-sun"></i>
+        </div>
+        <div>
+          <h4 class="text-success">Clima Estable</h4>
+          <p class="lead-text mb-0">
+            Reducir emisiones y proteger ecosistemas ayuda a mitigar el 
+            cambio climático y sus efectos devastadores.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Acciones Cotidianas -->
+<div class="content-card">
+  <h2 class="hero-subtitle text-center mb-4">
+    <i class="bi bi-lightbulb-fill"></i> Acciones que Puedes Hacer Hoy
+  </h2>
+  <div class="row">
+    <div class="col-md-4 mb-3 text-center">
+      <div class="p-3">
+        <i class="bi bi-lightbulb text-warning" style="font-size: 3rem;"></i>
+        <h5 class="mt-3 text-success">Ahorra Energía</h5>
+        <p class="lead-text">Apaga luces innecesarias y usa focos LED de bajo consumo</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3 text-center">
+      <div class="p-3">
+        <i class="bi bi-bicycle text-primary" style="font-size: 3rem;"></i>
+        <h5 class="mt-3 text-success">Movilidad Sostenible</h5>
+        <p class="lead-text">Usa bicicleta o transporte público en lugar del auto</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3 text-center">
+      <div class="p-3">
+        <i class="bi bi-bag text-success" style="font-size: 3rem;"></i>
+        <h5 class="mt-3 text-success">Reduce Plásticos</h5>
+        <p class="lead-text">Usa bolsas reutilizables y evita productos desechables</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3 text-center">
+      <div class="p-3">
+        <i class="bi bi-droplet-half text-info" style="font-size: 3rem;"></i>
+        <h5 class="mt-3 text-success">Cuida el Agua</h5>
+        <p class="lead-text">Cierra el grifo mientras te cepillas y repara fugas</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3 text-center">
+      <div class="p-3">
+        <i class="bi bi-egg-fried" style="font-size: 3rem; color: #ff9800;"></i>
+        <h5 class="mt-3 text-success">Consume Local</h5>
+        <p class="lead-text">Compra productos de temporada y de productores locales</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3 text-center">
+      <div class="p-3">
+        <i class="bi bi-people text-danger" style="font-size: 3rem;"></i>
+        <h5 class="mt-3 text-success">Educa y Comparte</h5>
+        <p class="lead-text">Inspira a otros a adoptar hábitos ecológicos</p>
+      </div>
+    </div>
   </div>
 </div>
 {% endblock %}
