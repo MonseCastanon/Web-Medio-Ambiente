@@ -97,6 +97,10 @@ web_medio_ambiente/
 
 ### 3. `index.html` - Página de Inicio
 
+<div class="contenedor">
+  <img width="1889" height="909" alt="image" src="https://github.com/user-attachments/assets/f5e53324-b678-448a-b2e6-efb0bb9172bf" />
+</div>
+
 **Propósito:** Página principal que introduce la importancia del cuidado ambiental.
 
 **Secciones incluidas:**
@@ -129,6 +133,10 @@ web_medio_ambiente/
 ---
 
 ### 4. `sistema.html` - Sistema de Gestión Ambiental
+
+<div class="contenedor">
+  <img width="1887" height="909" alt="image" src="https://github.com/user-attachments/assets/517fdc73-41aa-4d55-affd-40b3b637d50c" />
+</div>
 
 **Propósito:** Explicar qué es un SGA y cómo implementarlo en organizaciones.
 
@@ -165,6 +173,10 @@ web_medio_ambiente/
 ---
 
 ### 5. `futuro.html` - El Futuro del Planeta
+
+<div class="contenedor">
+  <img width="1883" height="911" alt="image" src="https://github.com/user-attachments/assets/2c25735d-c28c-4281-ae52-4b74ecf43030" />
+</div>
 
 **Propósito:** Crear conciencia sobre las consecuencias de nuestras acciones y los posibles escenarios futuros.
 
@@ -209,6 +221,10 @@ web_medio_ambiente/
 ---
 
 ### 6. `tres_r.html` - Las 3 R del Medio Ambiente
+
+<div class="contenedor">
+  <img width="1885" height="915" alt="image" src="https://github.com/user-attachments/assets/daf1d7a4-c829-4c3d-964c-5d1e624ce27a" />
+</div>
 
 **Propósito:** Enseñar el principio de las 3 R y cómo aplicarlo en la vida diaria.
 
